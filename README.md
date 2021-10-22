@@ -11,6 +11,7 @@
 
 
 ![image](https://raw.githubusercontent.com/Gadgetoid/Pinout.xyz/master/resources/raspberry-pi-pinout.png)
+## How to Run the Program
 
 ```cmd
 python3 basic_RGB_led.py 
@@ -36,8 +37,6 @@ if you want close the program just type **exit** like
 Enter comma separated values(RGB) :  exit
 exit
 ```
-
-
 
 if You found this Helpful, please star :star: it.
 
