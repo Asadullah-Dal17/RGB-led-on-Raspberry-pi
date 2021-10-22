@@ -20,5 +20,15 @@ when you run the program you get
 ```cmd
 Enter comma separated values(RGB) :  
 ```
-Enter comma sperated values between 0 to 100 for each LED, like " 0, 100, 0 "  
+Enter comma sperated values between 0 to 100 for each LED, like " 100, 0, 0 " hit **Enter** 
+
+```cmd
+Enter comma separated values(RGB) :  100, 0, 0
 ```
+RED 🔴 LED will trun on, If your connection are right, and you will see following
+```
+Enter comma separated values(RGB) :  100, 0, 0
+100, 0, 0
+red : 100    green : 0     blue :  0
+```
+
