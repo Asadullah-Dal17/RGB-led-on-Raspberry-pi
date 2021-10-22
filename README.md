@@ -31,7 +31,7 @@ Enter comma separated values(RGB) :  100, 0, 0
 100, 0, 0
 red : 100    green : 0     blue :  0
 ``` 
-if you want closed the program just type **exit** like 
+if you want close the program just type **exit** like 
 ```cmd
 Enter comma separated values(RGB) :  exit
 exit
