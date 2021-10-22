@@ -12,3 +12,16 @@
 
 ![image](https://raw.githubusercontent.com/Gadgetoid/Pinout.xyz/master/resources/raspberry-pi-pinout.png)
 
+```cmd
+python3 basic_RGB_led.py 
+
+```
+when you run the program you get 
+
+```
+Enter comma separated values(RGB) :  
+
+```
+Enter comma sperated values between 0 to 100 for each LEDs 
+
+```
