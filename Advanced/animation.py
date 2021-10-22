@@ -1,7 +1,6 @@
 import RPi.GPIO as GPIO 
-import random 
+import colors
 import time 
-# import cv2 as cv 
 import numpy as np
 rPin =26
 gPin =19
@@ -29,21 +28,30 @@ def changeColor(r_value, g_value, b_value):
     red.ChangeDutyCycle(r_value)
     green.ChangeDutyCycle(g_value)
     blue.ChangeDutyCycle(b_value)
-r, g , b =0,0,0
 
+# for i in range(255):
+#     values =colors.hsv_to_rgb(np.array([[0.5, 0.2, i]]))
+#     r, g, b = values.ravel()
+#     print(r, (r/2.55))
 while True:
     # img = np.zeros((200,200, 3), dtype=np.uint8)
     # cv.imshow('img', img)
     # key =cv.waitKey(1)
-    for i in range(100):
-        g = (100 - i)
-        color = (0, g, i)
-        print(g)
-        changeColor(i, g,i)
+    for i in range(255):
+        # g = (100 - i)
+        values =colors.hsv_to_rgb(np.array([[0.99, (i/255) ,100]]))
+        r, g, b = values.ravel()
+        r = r/2.55
+        g =g/2.55
+        b =b/2.55
+        print('r,', r, '  g', g , '  b' , b)
+        # color = (, g, i)
+        # print(g)
+        changeColor(r, g,b)
         time.sleep(0.1)
-    for i in range(100, 1, -1):
-        g = (100 - i)
-        print(g)
-        color = (0, g, i)
-        changeColor(i, g,i)
-        time.sleep(0.1)
+    # for i in range(100, 1, -1):
+    #     g = (100 - i)
+    #     print(g)
+    #     color = (0, g, i)
+    #     changeColor(i, g,i)
+    #     time.sleep(0.1)
